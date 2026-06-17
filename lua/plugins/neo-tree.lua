@@ -7,6 +7,19 @@ return {
             group_empty_dirs = true,
             follow_current_file = {
                 enabled = true,
+                leave_dirs_open = false,
+            },
+        },
+        window = {
+            mappings = {
+                -- 模拟 snacks explorer：
+                -- l：打开文件 / 展开目录
+                -- h：关闭目录
+                ["l"] = "open",
+                ["h"] = "close_node",
+
+                -- -- 可选：让 Z 和 snacks 一样关闭所有目录
+                -- ["Z"] = "close_all_nodes",
             },
         },
     },
